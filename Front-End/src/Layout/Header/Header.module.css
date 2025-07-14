@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    padding: 0 1rem;
+}
+
+.header img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+    margin: 0 1rem;
+}
+
+.header div {
+    display: flex;
+}
+
+.header div svg {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.iconsUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.iconsUser div{
+    margin-bottom: 1rem;
+}
+
+.header ul li:hover {
+    background-color: rgb(7, 51, 90);
+    color: white;
+}
+
+.selected {
+    background-color: rgb(7, 51, 90);
+    color: white;
+}

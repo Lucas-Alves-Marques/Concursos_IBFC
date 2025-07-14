@@ -1,0 +1,68 @@
+.body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.body h1 {
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+.cardsWrapper {
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    scrollbar-color: rgb(7, 51, 90);
+}
+
+.cards {
+    display: inline-flex;
+    gap: 3rem;
+    padding: 1rem 2rem;
+
+}
+
+.cardsWrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cardsWrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cardsWrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(7, 51, 90, 0.8);
+    border-radius: 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    height: 10rem;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(197, 197, 197);
+    box-shadow: 5px 5px 15px black;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.card button {
+    color: white;
+    background-color: rgb(7, 51, 90);
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}

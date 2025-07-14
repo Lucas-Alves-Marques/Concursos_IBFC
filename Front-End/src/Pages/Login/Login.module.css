@@ -1,0 +1,116 @@
+.body {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 20rem;
+    width: 35rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(197, 197, 197);
+    box-shadow: 5px 5px 15px black;
+
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 2rem;
+    border: 2px solid rgb(197, 197, 197);
+    color: rgb(7, 51, 90);
+}
+
+.card form h2 {
+    text-align: center;
+}
+
+.inputs {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputs input {
+    margin-top: 10px;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(7, 51, 90);
+    outline: none;
+    background-color: transparent;
+}
+
+.inputPassWord {
+    display: flex;
+    align-items: center;
+}
+
+.inputs svg {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+}
+
+.card form button {
+    color: white;
+    background-color: rgb(7, 51, 90);
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.divLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.divLogo img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 2rem;
+    border: 2px solid rgb(197, 197, 197);
+    color: rgb(7, 51, 90);
+}
+
+.message button {
+    color: white;
+    background-color: rgb(7, 51, 90);
+    border: none;
+    width: 50%;
+    padding: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}

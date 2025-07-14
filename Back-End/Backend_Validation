@@ -1,0 +1,340 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1729452118609
+  modified: 1729452118609
+collection:
+  - name: Users
+    meta:
+      id: fld_ed1966321cd64fa99c07d8838ae00b3a
+      created: 1752348821952
+      modified: 1752348821952
+      sortKey: -1752348821952
+    children:
+      - url: http://localhost:3333/Users/list
+        name: List_Users
+        meta:
+          id: req_c59804e4efa844f7923a7d6f3394752e
+          created: 1752348824077
+          modified: 1752350803413
+          isPrivate: false
+          sortKey: -1752348824077
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Users/create
+        name: Create_User
+        meta:
+          id: req_20baf909e70d4abd9c039b72a465600d
+          created: 1752350497511
+          modified: 1752350576961
+          isPrivate: false
+          sortKey: -1752350497511
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Usuário6",
+            	"password": "12345",
+            	"typeUser": "Common"
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Users/update/6
+        name: Update_User
+        meta:
+          id: req_eb03543c05b04780a61242cb76aabc59
+          created: 1752350779859
+          modified: 1752351189338
+          isPrivate: false
+          sortKey: -1752350779859
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Usuário6",
+            	"password": "8901",
+            	"typeUser": "Common"
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Users/delete/7
+        name: Delete_User
+        meta:
+          id: req_dd88e413c3624d18aee7d084d82948b7
+          created: 1752351177662
+          modified: 1752354880137
+          isPrivate: false
+          sortKey: -1752350638685
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Contest
+    meta:
+      id: fld_d5cba07dc67445838f48b0d11b4f6a36
+      created: 1752352967329
+      modified: 1752352967329
+      sortKey: -1752348821902
+    children:
+      - url: http://localhost:3333/Contest/list
+        name: List_Contest
+        meta:
+          id: req_ae64ca8ecfae40fa81250b8358065db5
+          created: 1752352967330
+          modified: 1752352997290
+          isPrivate: false
+          sortKey: -1752348824077
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Contest/create
+        name: Create_Contest
+        meta:
+          id: req_ca0567e8d8884cdb8d0aecbdc287225f
+          created: 1752352967332
+          modified: 1752353181605
+          isPrivate: false
+          sortKey: -1752350497511
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"position": "Analista de Dados",
+            	"customer": "SEFAZ-SP",
+            	"salary": 7200.00,
+            	"date": "2025-07-15",
+            	"location": "São Paulo - SP"
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Contest/update/5
+        name: Update_Contest
+        meta:
+          id: req_190845e4ed664d5490e26e6f6546d1a2
+          created: 1752352967333
+          modified: 1752353221622
+          isPrivate: false
+          sortKey: -1752350779859
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+
+            	"position": "Analista de Dados",
+            	"customer": "SEFAZ-SP",
+            	"salary": 7800.00,
+            	"date": "2025-07-15",
+            	"location": "São Paulo - SP"
+            	
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Contest/delete/5
+        name: Delete_Contest
+        meta:
+          id: req_a7551c4531d4446e9fe682cb03ba4cc1
+          created: 1752352967334
+          modified: 1752353252100
+          isPrivate: false
+          sortKey: -1752350638685
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Inscription
+    meta:
+      id: fld_e39ed869a78d4e428b5f1c428bfd4ced
+      created: 1752354054293
+      modified: 1752354054293
+      sortKey: -1752348821852
+    children:
+      - url: http://localhost:3333/Inscription/list
+        name: List_Inscriptions
+        meta:
+          id: req_c5fc4bdbca544e8798882331632d77c0
+          created: 1752354054293
+          modified: 1752354273265
+          isPrivate: false
+          sortKey: -1752348824077
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Inscription/create/7
+        name: Create_Inscriptions
+        meta:
+          id: req_18e98b0923f84b3cb57cbe71eb7425a6
+          created: 1752354054294
+          modified: 1752354607040
+          isPrivate: false
+          sortKey: -1752350497511
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_contest" : 4
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Inscription/list/2
+        name: List_InscriptionsUser
+        meta:
+          id: req_5111af6ebe244aacbe0a75b6fe51646f
+          created: 1752354054295
+          modified: 1752355265254
+          isPrivate: false
+          sortKey: -1752350779859
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3333/Inscription/delete/5
+        name: Delete_Contest
+        meta:
+          id: req_aa0f79b0f1e84feaaf7dfec179f6926e
+          created: 1752354054295
+          modified: 1752354356533
+          isPrivate: false
+          sortKey: -1752350638685
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1729452153228
+    modified: 1729452153228
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1729452153153
+    modified: 1729452153153
+    isPrivate: false
